@@ -1,0 +1,6 @@
+(defn slot0 [] :uint256 :external
+  (ir :uint256
+    (sload 0)))
+
+(defn __init__ [] :external
+    (ir (sstore 0 100)))
