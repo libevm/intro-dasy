@@ -6,4 +6,4 @@
 (defvar num (public :uint256))
 
 (defn __init__ [] :external
-  (set-rv! self/num 0 10))
+  (set-rv! self/num 50 32767))
