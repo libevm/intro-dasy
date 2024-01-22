@@ -1,0 +1,9 @@
+(defmacro set-rv! [obj min max]
+  (import random)
+  (let [val (random.randint min max)]
+    `(setv ~obj ~val)))
+
+(defvar num (public :uint256))
+
+(defn __init__ [] :external
+  (set-rv! self/num 0 10))
